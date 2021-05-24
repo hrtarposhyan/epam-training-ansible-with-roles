@@ -3,3 +3,4 @@
   roles:
     - role: 'mysql'
     - role: 'php'
+    - role: 'nginx'
