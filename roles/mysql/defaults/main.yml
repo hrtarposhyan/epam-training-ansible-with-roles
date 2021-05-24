@@ -1,0 +1,11 @@
+---
+# defaults file for mysql
+mysql_version: '8.0.25'
+mysql_unix_socket_path: '/var/run/mysqld/mysqld.sock'
+
+mysql_root_password: 'secret'
+
+mysql_user_name: 'user'
+mysql_user_password: 'secret'
+mysql_user_privileges: 'wpuser.*.*:ALL'
+

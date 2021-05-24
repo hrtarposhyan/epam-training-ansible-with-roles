@@ -1,0 +1,6 @@
+---
+mysql_root_password: 'free77'
+
+mysql_user_name: 'wpuser'
+mysql_user_password: 'free77'
+mysql_user_privileges: 'wpuser*.*:ALL'

@@ -1,0 +1,17 @@
+---
+# tasks file for php
+- name: 'InstalԼ mysql'
+  apt:
+    name:
+      - 'php-fpm=2:{{ php_version }}+75'
+      - 'php-mysql=2:{{ php_version }}+75'
+    state: 'present'
+    update_cache: true
+  become: true
+
+- name: 'Ensure php-fpm service is started'
+  service:
+    name: 'php{{ php_version }}-fpm'
+    state: 'started'
+    enabled: true
+  become: true
