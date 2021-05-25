@@ -1,6 +1,6 @@
 ---
 # tasks file for mysql
-- name: 'InstalԼ mysql package'
+- name: 'Install the mysql package'
   apt:
     name: 'mysql-server={{ mysql_version }}-0ubuntu0.20.04.1'
     state: 'present'

@@ -6,9 +6,9 @@ nginx_group: 'root'
 
 
 nginx_listen_port: 80
-nginx_document_root: 'var/www/html'
+nginx_document_root: '/var/www/html'
 
 nginx_index_files: 'index.html'
 
 nginx_server_name: 'localhost'
-nginx_php_fpm__sock_path: 'var/run/php/php-fpm.sock'
+nginx_php_fpm_sock_path: 'var/run/php/php-fpm.sock'

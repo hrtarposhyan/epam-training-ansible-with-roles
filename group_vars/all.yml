@@ -1,14 +1,22 @@
 ---
+# mysql
 mysql_root_password: 'free77'
 
-mysql_user_name: 'wpuser'
+mysql_user_name: 'mysqluser'
 mysql_user_password: 'free77'
-mysql_user_privileges: 'wpuser.*:ALL'
+mysql_user_privileges: 'dbwpname.*:ALL'
 
-nginx_document_root: 'opt/wordpress'
-nginx_index_files: 'index.php index.html'
+# nginx
+nginx_document_root: '/opt/wordpress'
+nginx_index_files: 'index.html index.php'
 
 nginx_server_name: '{{ ansible_host }}'
 nginx_php_fpm_sock_path: 'var/run/php/php{{ php_version }}-fpm.sock'
+
+# wordpress
+wordpress_mysql_db_user: '{{ mysql_user_name }}'
+wordpress_mysql_db_password: '{{ mysql_user_password }}'
+
+wordpress_mysql_login_password: '{{ mysql_root_password }}'
 
 

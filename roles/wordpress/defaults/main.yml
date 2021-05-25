@@ -1,0 +1,16 @@
+---
+# defaults file for wordpress
+wordpress_nginx_handler_name: 'Restart nginx service'
+wordpress_url: 'https://wordpress.org/latest.tar.gz'
+wordpress_archive_source: '/opt/wordpress-5.7.2.tar.gz'
+wordpress_user: 'www-data'
+wordpress_group: 'www-data'
+# DB
+wordpress_mysql_db_name: 'dbwpname'
+wordpress_mysql_db_user: 'dbwpuser'
+wordpress_mysql_db_password: 'secret'
+wordpress_mysql_db_host: 'localhost'
+wordpress_mysql_login_user: 'root'
+wordpress_mysql_login_password: ''
+
+

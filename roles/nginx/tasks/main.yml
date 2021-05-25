@@ -19,6 +19,6 @@
 - name: 'Ensure that nginx service is started' 
   service: 
     name: 'nginx'
-    state: 'restarted'
+    state: 'started'
     enabled: true
   become: true

@@ -1,6 +1,6 @@
 ---
 # tasks file for php
-- name: 'InstalԼ mysql'
+- name: 'Install the php packages'
   apt:
     name:
       - 'php-fpm=2:{{ php_version }}+75'
